@@ -1,0 +1,144 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-image: url(/img/back-image.png);
+    background-position: inherit;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* header start */
+.header {
+    display: flex;
+    justify-content: space-around;
+    padding: 15px;
+    align-items: center;
+}
+
+.logo img {
+    height: 30px;
+    width: 120px;
+}
+
+
+.middle ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.middle ul li {
+    list-style: none;
+    margin-right: 25px;
+} 
+
+.middle ul {
+    display: flex;
+}
+
+.right-side {
+    display: flex;
+}
+.right-side a {
+    text-decoration: none;
+    color: rgb(11, 11, 11);
+    font-size: 0.9rem;
+    padding: 11px 25px;
+    border-radius: 22px;
+    border-top-right-radius: 0;
+    font-weight: 400;
+}
+
+.button{
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    color: #fff !important ;
+}
+
+/* header end */
+
+
+
+/* content start */
+
+.container {
+    display: flex;
+    width: 100%;
+    height: 88vh;
+    overflow: hidden;
+}
+
+.col-6 {
+    width: 50%;
+    display: flex;
+}
+
+.content {
+    margin: 120px 110px;
+}
+
+.content :is(h1, p, a) {
+    margin-bottom: 15px;
+}
+
+.content h1 {
+    font-size: 4.2rem;
+}
+
+.content p {
+    animation-delay: 0.5s;
+    font-weight: 400;
+}
+
+.btn {
+    margin-top: 30px;
+}
+
+.btn.anim {
+    animation-delay: 1s;
+}
+
+.girl.anim {
+    animation-delay: 1.5s;
+}
+
+.girl img {
+    width: 420px;
+    height: 520px;
+    margin-left: 100px;
+}
+
+.button-2 {
+    background-image: linear-gradient(45deg, #df4881, #c430d7);
+    padding: 12px 60px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 0.9rem;
+    border-radius: 20px;
+    border-top-right-radius: 0;
+    font-weight: 400;
+}
+
+/* content end */
+
+
+/* animation */
+.anim {
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveup 1s linear forwards;
+}
+
+@keyframes moveup {
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+/* animation */
